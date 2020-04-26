@@ -1,6 +1,5 @@
 import React from "react";
 import { UserConsumer, } from "../providers/UserProvider";
-// import { NavLink, } from "react-router-dom";
 import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
 
 
@@ -43,12 +42,7 @@ const NavbarMe = () => (
 
           <Nav>
             <Nav.Link
-              style={{
-                position: "relative",
-                height: "30px",
-
-                color: "white",
-              }}
+             className="headerLinks"
               href="/"
             >
               Help | SignOut
@@ -67,110 +61,62 @@ const NavbarMe = () => (
         >
           <Nav className="mr-auto">
             <Nav.Link
-              style={{
-                position: "relative",
-                height: "30px",
-
-                color: "white",
-              }}
+             className="headerLinks"
               href="/"
             >
               Home |
           </Nav.Link>
             <Nav.Link
-              style={{
-                position: "relative",
-                height: "30px",
-
-                color: "white",
-              }}
+             className="headerLinks"
             >
               Mail |
           </Nav.Link>
-            <Nav.Link
-              style={{
-                position: "relative",
-                height: "30px",
 
-                color: "white",
-              }}
+
+            <Nav.Link
+             className="headerLinks"
             >
               Profile |
           </Nav.Link>
             <Nav.Link
-              style={{
-                position: "relative",
-                height: "30px",
-
-                color: "white",
-              }}
+             className="headerLinks"
             >
               Friends |
           </Nav.Link>
             <Nav.Link
-              style={{
-                position: "relative",
-                height: "30px",
-
-                color: "white",
-              }}
+             className="headerLinks"
             >
               Music
           </Nav.Link>
             <Nav.Link
-              style={{
-                position: "relative",
-                height: "30px",
-
-                color: "white",
-              }}
+             className="headerLinks"
             >
               | Video |
           </Nav.Link>
             <Nav.Link
-              style={{
-                position: "relative",
-                height: "30px",
-
-                color: "white",
-              }}
+             className="headerLinks"
             >
               Games
           </Nav.Link>
             <Nav.Link
-              style={{
-                position: "relative",
-                height: "30px",
-
-                color: "white",
-              }}
+             className="headerLinks"
             >
               | Events |
           </Nav.Link>
             <Nav.Link
-              style={{
-                position: "relative",
-                height: "30px",
-
-                color: "white",
-              }}
+             className="headerLinks"
             >
               More |
           </Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link
-              style={{
-                position: "relative",
-                height: "30px",
-                width: "90px",
-                color: "white",
-              }}
+              className="headerLinks"
               href="/user/profile"
             >
 
-              {/*  be replaced with the actual username */}
               {value.username}
+
             </Nav.Link>
 
           </Nav>

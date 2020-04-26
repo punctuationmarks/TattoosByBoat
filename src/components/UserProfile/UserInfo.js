@@ -1,6 +1,6 @@
 import React from "react";
 import { UserConsumer } from '../../providers/UserProvider';
-import { Image, Col } from "react-bootstrap";
+import { Image, Col, Row } from "react-bootstrap";
 
 const UserInfo = () => (
   <UserConsumer>
@@ -29,6 +29,12 @@ const UserInfo = () => (
               <br />
               <br />
             </Col>
+
+      <Row>
+      <div className="extendedNetwork">
+            { value.username} is in your extended network
+          </div>
+      </Row>
 
             </>
     )}

@@ -1,17 +1,18 @@
-:root{
+:root {
   --light-blue: #D1E9FF;
   --dark-blue: #9BD4F5;
   --darker-blue: #2E77BB;
-  --dark-orange: rgba(255, 152, 26, 80);
+  --dark-orange: rgba(255;
+  152, 26, 80);
   --yellow: rgba(255, 223, 158, 0.397);
+  --white: white;
 }
-
 
 body {
   font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
 }
 
-p, td{
+p, td {
   font-size: 1em;
 }
 
@@ -26,15 +27,37 @@ p, td{
   background-color: var(--light-blue);
 }
 
-.blurbPrompt{
+.blurbPrompt {
   color: var(--dark-orange);
 }
 
-.yellowTable{
-  background-color: var(--yellow); 
+.yellowTable {
+  background-color: var(--yellow);
   color: var(--dark-orange);
 }
 
+.headerLinks {
+  position: relative;
+  height: 30px;
+  color: var(--white);
+}
+
+.extendedNetwork {
+  font-size: 2em;
+  border: 2px solid black;
+  padding: 2em;
+  margin: 1em;
+  height: 4em;
+  text-align: center;
+  width: 15em;
+
+  @media (min-width:500px){
+    width: 30em;
+  }
+  @media (min-width:800px){
+    width: 40em;
+  }
+}
 
 /* #mobileVsDesktop{
   background-color: blue;
