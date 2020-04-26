@@ -1,12 +1,14 @@
 import React, { Fragment, } from 'react';
 import Navbar from "./components/Navbar";
-import UserProfile from "./components/UserProfile";
+import UserProfile from "./components/UserProfile2";
 import { Switch, Route, } from "react-router-dom";
 import { Container } from 'react-bootstrap'
 import "./App.css";
 
 const App = () => (
-  <div className="mobileVsDesktop">
+
+  <Fragment>
+
 
     <Navbar />
     <Container>
@@ -24,7 +26,7 @@ const App = () => (
       </Switch>
     </Container>
 
-    </div>
+  </Fragment>
 )
 
 export default App;

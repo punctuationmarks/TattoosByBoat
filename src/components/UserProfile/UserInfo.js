@@ -1,11 +1,6 @@
 import React from "react";
 import { UserConsumer } from '../../providers/UserProvider';
-import { Image, Container, Row, Col } from "react-bootstrap";
-import BlogPreview from "./BlogPreview";
-import Tattoos from "./Tattoos";
-import Contact from "./Contact";
-import Blurbs from "./Blurbs";
-import InterestDetailCards from "./InterestDetailCards";
+import { Image, Col } from "react-bootstrap";
 
 const UserInfo = () => (
   <UserConsumer>
