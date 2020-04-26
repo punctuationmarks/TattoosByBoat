@@ -28,7 +28,6 @@ const User = () => (
               <br />
               <br />
               <p>"{value.bio}"</p>
-              <p style={{ marginBottom: 0 }}>{value.gender}</p>
               <p style={{ marginBottom: 0 }}>{value.city},</p>
               <p style={{ marginBottom: 0 }}>{value.state}</p>
               <p>{value.country}</p>

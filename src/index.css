@@ -1,3 +1,16 @@
+
+:root {
+  --blue-color: #47a197;
+  --black-color: #484c4f;
+  --gray-color: #897f80;
+  --white-color: #e9e5e5;
+  --dark-white-color: #c5c3be;
+  --orange-color: #f08165;
+  --red-color: #c43e33;
+  --green-color: #808e43;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -9,4 +22,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+
+
+@media (max-width: 450px) {
+  .container {
+    margin-top: 8rem;
+  }
 }

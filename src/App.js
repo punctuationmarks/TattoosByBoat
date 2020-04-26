@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import UserProfile from "./components/UserProfile";
 import { Switch, Route, } from "react-router-dom";
 import { Container } from 'react-bootstrap'
+import "./index.css";
 
 const App = () => (
   <>
