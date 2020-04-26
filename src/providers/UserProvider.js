@@ -10,14 +10,18 @@ export const UserConsumer = UserContext.Consumer;
 class UserProvider extends React.Component {
   state = {
     username: "Boat",
-    lastLogin: "12/18/09",
-    gender: "Female",
     email: "tattoosbyboat@email.com",
     city: "Indianapolis",
     stateU: "IN",
     country: "United States",
     bio: "Thoughtful artist, who tattoos, paints, draws, and makes music. \nIf you're interested in getting a tattoo or having some art commissioned, send me an email.",
     updateUser: (user) => this.updateUser(user),
+    status: "Write whatever you want in these!",
+    here_for: "Kicking ass and taking names.",
+    body_type: "Bad Ass",
+    ethnicity: "The best one",
+    zodiac: "Sorry, not religious"
+
   };
 
   updateUser = (user) => {

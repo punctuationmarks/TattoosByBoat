@@ -52,7 +52,7 @@ const InterestDetailCards = () => (
                 <strong>Status: </strong>
               </td>
               <td style={{ padding: "10px", backgroundColor: "#D1E9FF", fontSize: "12px" }}>
-                Write whatever you want in these!
+                {value.status}
                 </td>
             </tr>
             <tr>
@@ -60,7 +60,7 @@ const InterestDetailCards = () => (
                 <strong>Here For: </strong>
               </td>
               <td style={{ padding: "10px", backgroundColor: "#D1E9FF", fontSize: "12px" }}>
-                Lorem ipsum dolor sit amet.
+                {value.here_for}
 
                 </td>
 
@@ -70,7 +70,7 @@ const InterestDetailCards = () => (
                 <strong>Body Type: </strong>
               </td>
               <td style={{ padding: "10px", backgroundColor: "#D1E9FF", fontSize: "12px" }}>
-                Lorem ipsum dolor sit amet.
+              {value.body_type}
 
                 </td>
             </tr>
@@ -79,8 +79,7 @@ const InterestDetailCards = () => (
                 <strong>Ethnicity: </strong>
               </td>
               <td style={{ padding: "10px", backgroundColor: "#D1E9FF", fontSize: "12px" }}>
-                Lorem ipsum dolor sit amet.
-
+                {value.ethnicity}
                 </td>
             </tr>
             <tr>
@@ -88,7 +87,7 @@ const InterestDetailCards = () => (
                 <strong>Zodiac Sign: </strong>
               </td>
               <td style={{ padding: "10px", backgroundColor: "#D1E9FF", fontSize: "12px" }}>
-                Lorem ipsum dolor sit amet.
+                {value.zodiac}
 
                 </td>
             </tr>

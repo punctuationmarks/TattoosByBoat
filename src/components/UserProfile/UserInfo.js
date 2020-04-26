@@ -7,13 +7,12 @@ import Contact from "./Contact";
 import Blurbs from "./Blurbs";
 import InterestDetailCards from "./InterestDetailCards";
 
-const User = () => (
+const UserInfo = () => (
   <UserConsumer>
     {value => (
       <>
-        <Container>
-          <Row>
-            <Col>
+  
+<Col>
               <div style={{ width: "30%", marginLeft: 0, }}>
                 <br />
                 <h3>{value.username}</h3>
@@ -23,6 +22,7 @@ const User = () => (
               <br />
               <p style={{ paddingBottom: '5px' }}> View My: <a href='/'>Pics</a> | <a href='/'>Videos</a></p>
             </Col>
+            
             <Col style={{ fontSize: "16px", paddingLeft: "1px" }}>
               <br />
               <br />
@@ -33,30 +33,11 @@ const User = () => (
               <p>{value.country}</p>
               <br />
               <br />
-              <br />
-              <br />
-              <p style={{ marginBottom: 0 }}>Last Login: </p>
-              <p>{value.lastLogin} </p>
-            </Col>
-            <BlogPreview></BlogPreview>
-          </Row>
-
-          <Row>
-            
-            <Col>
-              <InterestDetailCards></InterestDetailCards>
-              <Contact></Contact>
             </Col>
 
-            <Col>
-              <Blurbs></Blurbs>
-              <Tattoos></Tattoos>
-            </Col>
-          </Row>
-        </Container>
-      </>
+            </>
     )}
   </UserConsumer>
 )
 
-export default User;
+export default UserInfo;
