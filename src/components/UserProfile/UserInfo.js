@@ -12,7 +12,7 @@ const UserInfo = () => (
     {value => (
       <>
   
-<Col>
+    <Col>
               <div style={{ width: "30%", marginLeft: 0, }}>
                 <br />
                 <h3>{value.username}</h3>

@@ -12,7 +12,7 @@ class UserProvider extends React.Component {
     username: "Boat",
     email: "tattoosbyboat@email.com",
     city: "Indianapolis",
-    stateU: "IN",
+    state: "IN",
     country: "United States",
     bio: "Thoughtful artist, who tattoos, paints, draws, and makes music. \nIf you're interested in getting a tattoo or having some art commissioned, send me an email.",
     updateUser: (user) => this.updateUser(user),
@@ -20,7 +20,10 @@ class UserProvider extends React.Component {
     here_for: "Kicking ass and taking names.",
     body_type: "Bad Ass",
     ethnicity: "The best one",
-    zodiac: "Sorry, not religious"
+    general_info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum enim dolor possimus maiores harum iusto, expedita distinctio ex nesciunt saepe fugiat aliquid perspiciatis dolores atque, nihil nam officia veniam o dit esse architecto. Quas consequatur commodi ratione neque reprehenderit perferendis mollitia repudiandae at accusantium ut ipsa, cum quia numquam esse delectus suscipit nulla nisi possimus eum, exercitationem fuga dolore. Odit rerum provident ex eveniet exercitationem alias consequatur excepturi. Soluta, consequatur dolor quia fugiat adipisci nihil recusandae distinctio dolorum libero cupiditate corrupti eveniet aut ut atque a. Sapiente ratione aliquid provident at corrupti, praesentium dicta architecto quas vero placeat doloremque eligendi accusantium.",
+    zodiac: "Sorry, not religious",
+    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias a velit voluptas harum? Commodi dolores consequatur quaerat iste delectus.",
+    who_id_like_to_meet: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias a velit voluptas harum? Commodi dolores consequatur quaerat iste delectus.",
 
   };
 

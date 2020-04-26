@@ -9,7 +9,7 @@ const Blurbs = () => (
         {value => (
 
             <Table variant="sm">
-                <thead style={{ backgroundColor: "#FFDF9E", color: "#FF971A", }}>
+                <thead className="yellowTable">
                     <tr>
                         <th>
                             {value.username}'s Blurbs
@@ -18,22 +18,22 @@ const Blurbs = () => (
                 </thead>
                 <tbody>
                     <tr>
-                        <td style={{ color: "#FF971A", }}>
+                        <td className="blurbPrompt">
                             <strong>About Me:</strong>
                         </td>
                     </tr>
                     <tr>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias a velit voluptas harum? Commodi dolores consequatur quaerat iste delectus.
-                     </tr>
+                        {value.about}
+                    </tr>
 
                     <tr>
-                        <td style={{ color: "#FF971A", }}>
+                        <td className="blurbPrompt">
                             <strong>Who I'd Like to Meet:</strong>
                         </td>
                     </tr>
                     <tr>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias a velit voluptas harum? Commodi dolores consequatur quaerat iste delectus.
-                   </tr>
+                        {value.who_id_like_to_meet}
+                    </tr>
                 </tbody>
             </Table>
 

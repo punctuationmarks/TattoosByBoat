@@ -20,16 +20,11 @@ const InterestDetailCards = () => (
           </thead>
           <tbody>
             <tr>
-              <td style={{ padding: "10px", backgroundColor: "#9BD4F5", color: "#2E77BB" }}>
+              <td className="tablePromps">
                 <strong>General </strong>
               </td>
-              <td style={{ backgroundColor: "#D1E9FF", fontSize: "12px" }}>
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum enim dolor possimus maiores harum iusto, 
-                expedita distinctio ex nesciunt saepe fugiat aliquid perspiciatis dolores atque, nihil nam officia veniam o
-                dit esse architecto. Quas consequatur commodi ratione neque reprehenderit perferendis mollitia repudiandae at accusantium ut ipsa, 
-                cum quia numquam esse delectus suscipit nulla nisi possimus eum, exercitationem fuga dolore. Odit rerum provident ex eveniet exercitationem alias consequatur excepturi. Soluta, consequatur dolor quia fugiat adipisci nihil recusandae distinctio dolorum libero cupiditate corrupti eveniet aut ut atque a. 
-                Sapiente ratione aliquid provident at corrupti, praesentium dicta architecto quas vero placeat doloremque eligendi accusantium.
+              <td className="tableValues">
+                {value.general_info}
                 </td>
 
             </tr>
@@ -48,47 +43,46 @@ const InterestDetailCards = () => (
           </thead>
           <tbody>
             <tr>
-              <td style={{ padding: "10px", backgroundColor: "#9BD4F5", color: "#2E77BB", fontSize: "14px" }}>
+              <td className="tablePromps">
                 <strong>Status: </strong>
               </td>
-              <td style={{ padding: "10px", backgroundColor: "#D1E9FF", fontSize: "12px" }}>
+              <td className="tableValues">
                 {value.status}
                 </td>
             </tr>
             <tr>
-              <td style={{ padding: "10px", backgroundColor: "#9BD4F5", color: "#2E77BB", fontSize: "14px" }}>
+              <td className="tablePromps">
                 <strong>Here For: </strong>
               </td>
-              <td style={{ padding: "10px", backgroundColor: "#D1E9FF", fontSize: "12px" }}>
+              <td className="tableValues">
                 {value.here_for}
 
                 </td>
 
             </tr>
             <tr>
-              <td style={{ padding: "10px", backgroundColor: "#9BD4F5", color: "#2E77BB", fontSize: "14px" }}>
+              <td className="tablePromps">
                 <strong>Body Type: </strong>
               </td>
-              <td style={{ padding: "10px", backgroundColor: "#D1E9FF", fontSize: "12px" }}>
+              <td className="tableValues">
               {value.body_type}
 
                 </td>
             </tr>
             <tr>
-              <td style={{ padding: "10px", backgroundColor: "#9BD4F5", color: "#2E77BB", fontSize: "14px" }}>
+              <td className="tablePromps">
                 <strong>Ethnicity: </strong>
               </td>
-              <td style={{ padding: "10px", backgroundColor: "#D1E9FF", fontSize: "12px" }}>
+              <td className="tableValues">
                 {value.ethnicity}
                 </td>
             </tr>
             <tr>
-              <td style={{ padding: "10px", backgroundColor: "#9BD4F5", color: "#2E77BB", fontSize: "14px" }}>
+              <td className="tablePromps">
                 <strong>Zodiac Sign: </strong>
               </td>
-              <td style={{ padding: "10px", backgroundColor: "#D1E9FF", fontSize: "12px" }}>
+              <td className="tableValues">
                 {value.zodiac}
-
                 </td>
             </tr>
           </tbody>

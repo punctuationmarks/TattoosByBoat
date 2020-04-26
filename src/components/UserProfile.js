@@ -15,7 +15,7 @@ const UserProfile = () => (
         <Container>
           <Row>
             <UserInfo></UserInfo>
-            <BlogPreview></BlogPreview>
+            {/* <BlogPreview></BlogPreview> */}
           </Row>
 
           <Row>

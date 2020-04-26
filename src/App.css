@@ -1,4 +1,12 @@
-/* .App {
+:root{
+  --light-blue: #D1E9FF;
+  --dark-blue: #9BD4F5;
+  --darker-blue: #2E77BB;
+  --dark-orange: rgba(255, 152, 26, 80);
+  --yellow: rgba(255, 223, 158, 0.397);
+}
+
+.App {
   text-align: center;
 }
 
@@ -24,5 +32,29 @@
 }
 
 body {
-  font-family: Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;
-} */
+  font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
+}
+
+p, td{
+  font-size: 1em;
+}
+
+.tablePromps {
+  padding: 1em;
+  background-color: var(--dark-blue);
+  color: var(--darker-blue);
+}
+
+.tableValues {
+  padding: 0.75em;
+  background-color: var(--light-blue);
+}
+
+.blurbPrompt{
+  color: var(--dark-orange);
+}
+
+.yellowTable{
+  background-color: var(--yellow); 
+  color: var(--dark-orange);
+}
