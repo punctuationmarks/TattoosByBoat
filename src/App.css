@@ -58,3 +58,12 @@ p, td{
   background-color: var(--yellow); 
   color: var(--dark-orange);
 }
+
+
+#mobileVsDesktop{
+  display:flex;
+  flex-direction: row;
+  @media (max-width){
+    flex-direction: column;
+  }
+}

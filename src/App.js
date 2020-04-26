@@ -6,7 +6,8 @@ import { Container } from 'react-bootstrap'
 import "./App.css";
 
 const App = () => (
-  <>
+  <div className="mobileVsDesktop">
+
     <Navbar />
     <Container>
       <Switch>
@@ -22,7 +23,8 @@ const App = () => (
         />
       </Switch>
     </Container>
-  </>
+
+    </div>
 )
 
 export default App;
