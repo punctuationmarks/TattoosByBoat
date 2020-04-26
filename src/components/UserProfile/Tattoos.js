@@ -12,7 +12,7 @@ const Tattoos = () => (
                 <thead style={{ backgroundColor: "#FFDF9E", color: "#FF971A", }}>
                     <tr>
                         <th>
-                            {value.username}'s Friend Space
+                            {value.username}'s Tattoos
                   </th>
                         <th>
                         </th>
@@ -25,7 +25,7 @@ const Tattoos = () => (
                 <tbody>
                     <tr>
                         <td>
-                            <Image thumbnail="true"  src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/flash_0.jpg?raw=true" />
+                            <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/flash_0.jpg?raw=true" />
                         </td>
                         <td>
                             <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/cowgirl_classic.jpg?raw=true" />

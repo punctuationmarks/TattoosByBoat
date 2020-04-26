@@ -1,6 +1,6 @@
 import React from "react";
 import { UserConsumer } from '../../providers/UserProvider';
-import { Card, Image, Container, Row, Col, Table } from "react-bootstrap";
+import { Image, Container, Row, Col } from "react-bootstrap";
 import BlogPreview from "./BlogPreview";
 import Tattoos from "./Tattoos";
 import Contact from "./Contact";
@@ -18,7 +18,7 @@ const User = () => (
                 <br />
                 <h3>{value.username}</h3>
                 <br />
-                <Image style={{ width: "210px", height: "200px" }} src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/profile_pics/default.jpg?raw=true" alt="avatar" />
+                <Image src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/profile_pics/default.jpg?raw=true" alt="avatar" />
               </div>
               <br />
               <p style={{ paddingBottom: '5px' }}> View My: <a href='/'>Pics</a> | <a href='/'>Videos</a></p>
@@ -43,18 +43,15 @@ const User = () => (
           </Row>
 
           <Row>
+            
             <Col>
-        <InterestDetailCards></InterestDetailCards>
-        
+              <InterestDetailCards></InterestDetailCards>
+              <Contact></Contact>
             </Col>
 
-            <Col> 
+            <Col>
               <Blurbs></Blurbs>
-              <strong>
-
-                <Tattoos></Tattoos>
-                
-              </strong>
+              <Tattoos></Tattoos>
             </Col>
           </Row>
         </Container>
