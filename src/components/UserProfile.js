@@ -3,105 +3,11 @@ import Media from 'react-media';
 import { UserConsumer } from '../providers/UserProvider';
 import { Container, Row, Col } from "react-bootstrap";
 import UserInfo from "./UserProfile/UserInfo";
-import BlogPreview from "./UserProfile/BlogPreview";
 import Tattoos from "./UserProfile/Tattoos";
 import Contact from "./UserProfile/Contact";
 import Blurbs from "./UserProfile/Blurbs";
 import InterestCard from "./UserProfile/InterestCard";
 import DetailCard from "./UserProfile/DetailCard";
-
-// class UserProfile extends Component {
-//     render() {
-//         return (
-//             <div>
-//                 <Media queries={{
-//                     small: "(max-width: 599px)",
-//                     large: "(min-width: 600px)",
-//                     //  and (max-width: 1199px)",
-//                     // large: "(min-width: 1200px)"
-//                 }}>
-//                     {matches => (
-//                         <Fragment>
-//                             {matches.small &&
-
-//                                 <UserConsumer>
-
-//                                     {value => (
-//                                         <Container>
-//                                             <Row>
-//                                                 <UserInfo></UserInfo>
-//                                                 {/* <BlogPreview></BlogPreview> */}
-//                                             </Row>
-
-//                                             <Row>
-//                                                 <InterestDetailCards></InterestDetailCards>
-//                                             </Row>
-//                                             <Row>
-//                                                 <Blurbs></Blurbs>
-
-//                                             </Row>
-
-
-//                                             <Row>
-//                                                 <Tattoos></Tattoos>
-
-//                                             </Row>
-
-//                                             <Row>
-//                                                 <Contact></Contact>
-
-//                                             </Row>
-
-
-
-//                                         </Container>
-//                                     )}
-//                                 </UserConsumer>
-//                             }
-//                             {matches.large &&
-//                                 <UserConsumer>
-
-//                                     {value => (
-//                                         <Container>
-//                                             <Row>
-//                                                 <UserInfo></UserInfo>
-//                                                 {/* <BlogPreview></BlogPreview> */}
-//                                             </Row>
-
-//                                             <Row>
-
-//                                                 <Col>
-//                                                     <InterestDetailCards></InterestDetailCards>
-//                                                     <Contact></Contact>
-//                                                 </Col>
-
-//                                                 <Col>
-//                                                     <Blurbs></Blurbs>
-//                                                     <Tattoos></Tattoos>
-//                                                 </Col>
-//                                             </Row>
-
-//                                         </Container>
-//                                     )}
-//                                 </UserConsumer>
-
-//                             }
-//                         </Fragment>
-//                     )}
-
-
-//                     )}
-//                 />
-//                 </Media>
-
-//             </div>
-//         );
-//     }
-// }
-
-
-// export default UserProfile;
-
 
 class UserProfile extends React.Component {
   render() {
@@ -112,41 +18,41 @@ class UserProfile extends React.Component {
           medium: "(min-width: 600px) and (max-width: 1199px)",
           large: "(min-width: 1200px)"
         }}>
+
           {matches => (
             <Fragment>
               {matches.small && <UserConsumer>
                 {value => (
-                  <>
+                  <Fragment>
                     <Container>
                       <Row>
-                        <UserInfo></UserInfo>
-                        {/* <BlogPreview></BlogPreview> */}
+                        <UserInfo />
                       </Row>
 
                       <Row>
 
-                        <Tattoos></Tattoos>
+                        <Tattoos />
                       </Row>
 
                       <Row>
                         <Col>
-                          <Blurbs></Blurbs>
+                          <Blurbs />
                         </Col>
                       </Row>
 
                       <Row>
                         <Col>
-                          <Contact></Contact>
+                          <Contact />
                         </Col>
                       </Row>
 
                       <Row>
 
                         <Col>
-                          <InterestCard></InterestCard>
+                          <InterestCard />
                         </Col>
                         <Col>
-                          <DetailCard></DetailCard>
+                          <DetailCard />
                         </Col>
 
 
@@ -154,73 +60,79 @@ class UserProfile extends React.Component {
 
 
                     </Container>
-                  </>
+                  </Fragment>
                 )}
               </UserConsumer>}
+
               {matches.medium && <UserConsumer>
                 {value => (
-                  <>
+                  <Fragment>
                     <Container>
                       <Row>
-                        <UserInfo></UserInfo>
-                        {/* <BlogPreview></BlogPreview> */}
+                        <UserInfo />
                       </Row>
 
                       <Row>
 
-                        <Tattoos></Tattoos>
+                        <Tattoos />
                       </Row>
+
                       <Row>
                         <Col>
-                          <InterestCard></InterestCard>
-                        </Col>
-                        <Col>
-                          <DetailCard></DetailCard>
-                        </Col>
-
-
-                        <Col>
-                          <Blurbs></Blurbs>
+                          <Blurbs />
                         </Col>
                       </Row>
+
+                      <Row>
+                        <Col>
+                          <Contact />
+                        </Col>
+                      </Row>
+
                       <Row>
 
                         <Col>
-                          <Contact></Contact>
+                          <InterestCard />
                         </Col>
+                        <Col>
+                          <DetailCard />
+                        </Col>
+
+
                       </Row>
+
 
                     </Container>
-                  </>
+                  </Fragment>
                 )}
               </UserConsumer>}
+
               {matches.large &&
                 <UserConsumer>
                   {value => (
-                    <>
+                    <Fragment>
                       <Container>
                         <Row>
-                          <UserInfo></UserInfo>
-                          {/* <BlogPreview></BlogPreview> */}
+                          <UserInfo />
                         </Row>
 
                         <Row>
 
                           <Col>
-                            <InterestCard></InterestCard>
-                            <DetailCard></DetailCard>
+                            <InterestCard />
+                            <DetailCard />
 
-                            <Contact></Contact>
+                            <Contact />
                           </Col>
 
                           <Col>
-                            <Blurbs></Blurbs>
-                            <Tattoos></Tattoos>
+                            <Blurbs />
+                            <Tattoos />
                           </Col>
                         </Row>
 
                       </Container>
-                    </>
+                    </Fragment>
                   )}
                 </UserConsumer>
               }

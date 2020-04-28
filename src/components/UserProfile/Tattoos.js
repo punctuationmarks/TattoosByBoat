@@ -9,7 +9,7 @@ const Tattoos = () => (
     <UserConsumer>
         {value => (
             <Table variant="sm">
-                <thead style={{ backgroundColor: "#FFDF9E", color: "#FF971A", }}>
+                <thead className="yellowTable">
                     <tr>
                         <th>
                             {value.username}'s Tattoos

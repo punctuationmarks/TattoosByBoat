@@ -11,8 +11,8 @@ const Contact = () => (
 
                 }}
             >
-                <Table style={{ border: "1px solid black" }} hover size="sm">
-                    <thead style={{ backgroundColor: "#56AFEC", color: "white", }}>
+                <Table className="contactTable" hover size="sm">
+                    <thead className="contactTableHeader">
                         <tr>
                             <th>
                                 Contact {value.username}
@@ -26,51 +26,43 @@ const Contact = () => (
                         <tr>
                             <td>
                                 <a href="/">
-                                    <span>📩</span> Message Me
-</a>
+                                    <span>📩</span> Message Me</a>
                             </td>
 
                             <td>
                                 <a href="/">
-                                    📤 Forward to Friend
-</a>
+                                    <span>📤</span> Forward to Friend</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <a href="/">
-                                    👥 Add to Friends
-</a>
+                                    <span>👥</span> Add to Friends</a>
                             </td>
 
                             <td>
                                 <a href="/">
-                                    ⭐️ Add to Favorites
-</a>
+                                    <span>⭐️</span> Add to Favorites</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <a href="/">
-                                    📲 Instant Message
-</a>
+                                    <span>📲</span> Instant Message</a>
                             </td>
                             <td>
                                 <a href="/">
-                                    🚫 Block User
-</a>
+                                    <span>🚫</span> Block User</a>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <a href="/">
-                                    👨‍👩‍👧‍👦 Add to Group
-</a>
+                                    <span>👨‍👩‍👧‍👦</span> Add to Group</a>
                             </td>
                             <td>
                                 <a href="/">
-                                    📈 Rank User
-</a>
+                                    <span>📈</span> Rank User</a>
                             </td>
 
                         </tr>

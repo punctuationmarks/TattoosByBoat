@@ -1,11 +1,14 @@
 :root {
-  --light-blue: #D1E9FF;
-  --dark-blue: #9BD4F5;
-  --darker-blue: #2E77BB;
-  --dark-orange: rgba(255;
-  152, 26, 80);
-  --yellow: rgba(255, 223, 158, 0.397);
+  --light-blue: rgba(209, 233, 255, 0.966);
+  --light-medium-blue: rgba(155, 212, 245, 0.822);
+  --medium-blue: rgba(86, 176, 236, 0.904);
+  --darker-blue: rgba(46, 119, 187, 0.87);
+  --dark-orange: rgb(211, 141, 57);
+   /* rgba(255, 152, 26, 80); */
+  --yellow: rgba(255, 223, 158, 0.37);
+   /* rgba(255, 223, 158, 0.397); */
   --white: rgba(255, 255, 255, 0.877);
+  --black: rgba(0, 0, 0, 0.884);
 }
 
 body {
@@ -22,7 +25,7 @@ a {
 
 .tablePromps {
   padding: 1em;
-  background-color: var(--dark-blue);
+  background-color: var(--light-medium-blue);
   color: var(--darker-blue);
 }
 
@@ -42,7 +45,7 @@ a {
 
 .secondaryNavbar {
   position: relative;
-  background-color: #56AFEC;
+  background-color: var(--medium-blue);
   height: 2em;
   font-size: 1em;
 }
@@ -69,12 +72,21 @@ a {
 
 .extendedNetwork {
   font-size: 1.6em;
-  border: 2px solid black;
+  border: 2px solid var(--black);
   padding: 1em;
   margin: 1em;
   height: 4em;
   text-align: center;
   width: 12em;
+}
+
+.contactTable {
+  border: 1px solid var(--black);
+}
+
+.contactTableHeader{
+  background-color: var(--medium-blue);
+  color: var(--white);
 }
 
 @media (min-width:500px) {

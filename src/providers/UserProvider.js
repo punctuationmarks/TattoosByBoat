@@ -19,7 +19,7 @@ class UserProvider extends React.Component {
     status: "Lorem ipsum dolor",
     here_for: "lorem ipsum dolor.",
     body_type: "lorem ipsum dolor.",
-    ethnicity: "lorem ipsum dolor.",
+    ethnicity: "lorem ipsum dolor.",  
     zodiac: "lorem ipsum dolor, you know how I do",
     general_info: "Dolor possimus maiores harum iusto, expedita distinctio ex nesciunt saepe fugiat aliquid perspiciatis dolores atque,  numquam esse delectus suscipit nulla nisi possimus eum, exercitationem fuga dolore. Odit rerum provident ex eveniet exercitationem alias consequatur excepturi. Sapiente ratione aliquid provident at corrupti.",
     about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias a velit voluptas harum? Commodi dolores consequatur quaerat iste delectus.",

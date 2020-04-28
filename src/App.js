@@ -16,11 +16,6 @@ const App = () => (
           path="/"
           render={() => <UserProfile />}
         />
-        <Route
-          exact
-          path="/user/profile"
-          render={() => <UserProfile />}
-        />
       </Switch>
     </Container>
 

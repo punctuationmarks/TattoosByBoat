@@ -25,11 +25,23 @@ const NavbarMe = () => (
           <Nav>
 
             {/* fix this! */}
-            <Form inline action="https://duckduckgo.com/?q=search_variable" 
-            className="navSearchBar">
-              <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-              <Button variant="light">Search</Button>
+            <Form inline
+              action="https://duckduckgo.com/"
+              method="get"
+              className="navSearchBar">
+              <FormControl
+                name="q"
+                type="text"
+                placeholder="Search"
+                className="mr-sm-2" />
+              <Button
+                type="submit"
+                variant="light">
+                Search
+              </Button>
+
             </Form>
+
             <Nav.Link
               className="headerLinks"
               target="_blank"

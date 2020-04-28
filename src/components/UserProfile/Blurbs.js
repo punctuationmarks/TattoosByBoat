@@ -11,9 +11,7 @@ const Blurbs = () => (
             <Table variant="sm">
                 <thead className="yellowTable">
                     <tr>
-                        <th>
-                            {value.username}'s Blurbs
-                  </th>
+                        {value.username}'s Blurbs
                     </tr>
                 </thead>
                 <tbody>
