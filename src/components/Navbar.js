@@ -7,104 +7,103 @@ const NavbarMe = () => (
   <UserConsumer>
     {value => (
       <>
-        <Navbar style={{ fontSize: "14px" }} bg="primary" variant="dark">
+        <Navbar bg="primary" variant="dark">
           <Nav className="mr-auto">
             <Nav.Link
               style={{
-                color: "white"
+                color: "white",
+                fontSize: "2.25em"
               }}
               href="/">
-              MySpace.com | Home
-        </Nav.Link>
+              {value.username}
+            </Nav.Link>
 
-            <Form style={{ color: "white", marginLeft: "50px" }}>
-              {['radio'].map(type => (
-                <div key={`inline-${type}`} className="mb-3">
-                  <Form.Check
-                    inline
-                    label="The Web"
-                    type={type}
-                    id={`inline-${type}-2`} />
-                  <Form.Check
-                    inline
-                    label="MySpace"
-                    type={type}
-                    id={`inline-${type}-3`}
-                  />
-                </div>
-              ))}
-            </Form>
-            <Form inline>
+          </Nav>
+
+
+
+          <Nav>
+
+            {/* fix this! */}
+            <Form inline action="https://duckduckgo.com/?q=search_variable" 
+            className="navSearchBar">
               <FormControl type="text" placeholder="Search" className="mr-sm-2" />
               <Button variant="light">Search</Button>
             </Form>
-          </Nav>
-
-          <Nav>
             <Nav.Link
-             className="headerLinks"
+              className="headerLinks"
+              target="_blank"
               href="/"
             >
               Help | SignOut
         </Nav.Link>
           </Nav>
         </Navbar>
-        <Navbar
-          style={{
-            // backgroundImage: "linear-gradient(to right, red , yellow)",
-            position: "relative",
-            backgroundColor: "#56AFEC",
-            height: "30px",
-            fontSize: "14px"
-          }}
+        <Navbar className="secondaryNavbar"
           variant="dark"
         >
           <Nav className="mr-auto">
             <Nav.Link
-             className="headerLinks"
-              href="/"
+              className="headerLinks"
+              href={value.home_link}
             >
               Home |
           </Nav.Link>
             <Nav.Link
-             className="headerLinks"
+              className="headerLinks"
+              target="_blank"
+              href={value.mail_link}
             >
               Mail |
           </Nav.Link>
 
 
             <Nav.Link
-             className="headerLinks"
+              className="headerLinks"
+              target="_blank"
+              href={value.profile_link}
             >
               Profile |
           </Nav.Link>
             <Nav.Link
-             className="headerLinks"
+              className="headerLinks"
+              href={value.friends_link}
+              target="_blank"
             >
               Friends |
           </Nav.Link>
             <Nav.Link
-             className="headerLinks"
+              className="headerLinks"
+              href={value.music_link}
+              target="_blank"
             >
               Music
           </Nav.Link>
             <Nav.Link
-             className="headerLinks"
+              className="headerLinks"
+              href={value.video_link}
+              target="_blank"
             >
               | Video |
           </Nav.Link>
             <Nav.Link
-             className="headerLinks"
+              className="headerLinks"
+              href={value.game_link}
+              target="_blank"
             >
               Games
           </Nav.Link>
             <Nav.Link
-             className="headerLinks"
+              className="headerLinks"
+              href={value.events_link}
+              target="_blank"
             >
               | Events |
           </Nav.Link>
             <Nav.Link
-             className="headerLinks"
+              className="headerLinks"
+              target="_blank"
+              href={value.more_link}
             >
               More |
           </Nav.Link>
@@ -112,16 +111,12 @@ const NavbarMe = () => (
           <Nav>
             <Nav.Link
               className="headerLinks"
-              href="/user/profile"
+              href={value.home_link}
             >
-
               {value.username}
-
             </Nav.Link>
-
           </Nav>
         </Navbar>
-
       </>
     )}
   </UserConsumer>

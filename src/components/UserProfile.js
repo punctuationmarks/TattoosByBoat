@@ -129,6 +129,18 @@ class UserProfile extends React.Component {
                       </Row>
 
                       <Row>
+                        <Col>
+                          <Blurbs></Blurbs>
+                        </Col>
+                      </Row>
+
+                      <Row>
+                        <Col>
+                          <Contact></Contact>
+                        </Col>
+                      </Row>
+
+                      <Row>
 
                         <Col>
                           <InterestCard></InterestCard>
@@ -139,19 +151,7 @@ class UserProfile extends React.Component {
 
 
                       </Row>
-                      <Row>
 
-                        <Col>
-                          <Blurbs></Blurbs>
-                        </Col>
-                      </Row>
-
-                      <Row>
-                        <Col>
-                          <Contact></Contact>
-                        </Col>
-
-                      </Row>
 
                     </Container>
                   </>

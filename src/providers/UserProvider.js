@@ -16,14 +16,32 @@ class UserProvider extends React.Component {
     country: "United States",
     bio: "Thoughtful artist, who tattoos, paints, draws, and makes music. \nIf you're interested in getting a tattoo or having some art commissioned, send me an email.",
     updateUser: (user) => this.updateUser(user),
-    status: "Write whatever you want in these!",
-    here_for: "lorem ipsum.",
-    body_type: "lorem ipsum",
-    ethnicity: "lorem ipsum",
-    general_info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum enim dolor possimus maiores harum iusto, expedita distinctio ex nesciunt saepe fugiat aliquid perspiciatis dolores atque, nihil nam officia veniam o dit esse architecto. Quas consequatur commodi ratione neque reprehenderit perferendis mollitia repudiandae at accusantium ut ipsa, cum quia numquam esse delectus suscipit nulla nisi possimus eum, exercitationem fuga dolore. Odit rerum provident ex eveniet exercitationem alias consequatur excepturi. Soluta, consequatur dolor quia fugiat adipisci nihil recusandae distinctio dolorum libero cupiditate corrupti eveniet aut ut atque a. Sapiente ratione aliquid provident at corrupti, praesentium dicta architecto quas vero placeat doloremque eligendi accusantium.",
-    zodiac: "lorem ipsum",
+    status: "Lorem ipsum dolor",
+    here_for: "lorem ipsum dolor.",
+    body_type: "lorem ipsum dolor.",
+    ethnicity: "lorem ipsum dolor.",
+    zodiac: "lorem ipsum dolor, you know how I do",
+    general_info: "Dolor possimus maiores harum iusto, expedita distinctio ex nesciunt saepe fugiat aliquid perspiciatis dolores atque,  numquam esse delectus suscipit nulla nisi possimus eum, exercitationem fuga dolore. Odit rerum provident ex eveniet exercitationem alias consequatur excepturi. Sapiente ratione aliquid provident at corrupti.",
     about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias a velit voluptas harum? Commodi dolores consequatur quaerat iste delectus.",
     who_id_like_to_meet: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias a velit voluptas harum? Commodi dolores consequatur quaerat iste delectus.",
+
+    // links for navbar
+    home_link: "/",
+    mail_link: "https://protonmail.com/",
+    profile_link: "/",
+    friends_link: "https://github.com/punctuationmarks",
+    music_link: "https://www.youtube.com/watch?v=2MHhLDCJ57E",
+    video_link: "/",
+    game_link: "https://selflessheroes.fr/",
+    events_link: "https://www.youtube.com/watch?v=XvB9ftAHpwc",
+    more_link: "/",
+
+    // links on bio
+    instagram: "https://www.instagram.com/tattoosbyboat/",
+    shop_website: "https://mythicalwizardtattoo.com/",
+    shop_instagram: "https://www.instagram.com/mythicalwizardtattoo/",
+    
+
 
   };
 
