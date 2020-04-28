@@ -15,9 +15,11 @@ const UserInfo = () => (
             <Image src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/profile_pics/default.jpg?raw=true" alt="avatar" />
           </div>
           <br />
-          <p style={{ paddingBottom: '5px' }}>
+          <p>
             View My:
-           <a href={value.instagram} target="_blank">
+            </p>
+          <p>
+            <a href={value.instagram} target="_blank">
               Insta</a> |
            <a href={value.shop_website} target="_blank">
               Shop</a> |

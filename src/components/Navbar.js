@@ -7,7 +7,7 @@ const NavbarMe = () => (
   <UserConsumer>
     {value => (
       <>
-        <Navbar bg="primary" variant="dark">
+        <Navbar className="navbar" bg="primary" variant="dark">
           <Nav className="mr-auto">
             <Nav.Link
               style={{
@@ -103,30 +103,15 @@ const NavbarMe = () => (
               href={value.game_link}
               target="_blank"
             >
-              Games
+              Games |
           </Nav.Link>
             <Nav.Link
               className="headerLinks"
               href={value.events_link}
               target="_blank"
             >
-              | Events |
+              Events 
           </Nav.Link>
-            <Nav.Link
-              className="headerLinks"
-              target="_blank"
-              href={value.more_link}
-            >
-              More |
-          </Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link
-              className="headerLinks"
-              href={value.home_link}
-            >
-              {value.username}
-            </Nav.Link>
           </Nav>
         </Navbar>
       </>
