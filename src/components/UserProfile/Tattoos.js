@@ -4,6 +4,7 @@
 import React from "react";
 import { UserConsumer } from '../../providers/UserProvider'
 import { Table, Image } from "react-bootstrap";
+import flash_0 from '../../images/flash_0.jpg'
 
 const Tattoos = () => (
     <UserConsumer>
@@ -25,7 +26,8 @@ const Tattoos = () => (
                 <tbody>
                     <tr>
                         <td>
-                            <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/flash_0.jpg?raw=true" />
+                            <Image thumbnail="true" src={flash_0} />
+                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/flash_0.jpg?raw=true" /> */}
                         </td>
                         <td>
                             <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/cowgirl_classic.jpg?raw=true" />
