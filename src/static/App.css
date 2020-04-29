@@ -96,6 +96,11 @@ a {
   color: var(--white);
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width:500px) {
   .extendedNetwork {
     font-size: 1.75em;
