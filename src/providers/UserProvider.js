@@ -1,8 +1,8 @@
 import React from "react";
+import profile_image from "../static/images/profile_pic_0.jpg"
 
 // Set Up The Initial Context
 const UserContext = React.createContext();
-
 // Create an exportable consumer that can be injected into components
 export const UserConsumer = UserContext.Consumer;
 
@@ -23,7 +23,7 @@ class UserProvider extends React.Component {
     general_info: "Dolor possimus maiores harum iusto, expedita distinctio ex nesciunt saepe fugiat aliquid perspiciatis dolores atque,  numquam esse delectus suscipit nulla nisi possimus eum, exercitationem fuga dolore. Odit rerum provident ex eveniet exercitationem alias consequatur excepturi. Sapiente ratione aliquid provident at corrupti.",
     about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias a velit voluptas harum? Commodi dolores consequatur quaerat iste delectus.",
     who_id_like_to_meet: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias a velit voluptas harum? Commodi dolores consequatur quaerat iste delectus.",
-
+    profile_image: profile_image,
     // links for navbar
     home_link: "/",
     mail_link: "https://protonmail.com/",

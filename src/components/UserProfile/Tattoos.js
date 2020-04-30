@@ -20,6 +20,7 @@ import tiger_classic_0 from '../../static/images/tiger_classic_0.jpg'
 import trippy_af_0 from '../../static/images/trippy_af_0.jpg'
 import peacock_feather from '../../static/images/peacock_feather.jpg'
 import face_tat from '../../static/images/face_tat.jpg'
+import dad from '../../static/images/dad.jpg'
 
 
 const Tattoos = () => (
@@ -46,12 +47,12 @@ const Tattoos = () => (
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/flash_0.jpg?raw=true" /> */}
                         </td>
                         <td>
-                            <Image src={zodiac_killer} />
+                            <Image src={zodiac_killer} alt="tattoo of the zodiac killer"/>
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/cowgirl_classic.jpg?raw=true" /> */}
                         </td>
                         <td>
-                            <Image src={gray_wash_bird_0} />
+                            <Image src={gray_wash_bird_0} alt="tattoo of detailed gray wash bird" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/images/zodiac_killer.jpg?raw=true" /> */}
                         </td>
@@ -61,37 +62,37 @@ const Tattoos = () => (
 
                     <tr>
                         <td>
-                            <Image src={skull_0} />
+                            <Image src={skull_0} alt="tattoo of skull"/>
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/images/bondage_woman.jpg?raw=true" /> */}
                         </td>
 
                         <td>
-                            <Image src={sun_in_my_hand} />
+                            <Image src={sun_in_my_hand} alt="tattoo of hand holding sun" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/sad_happy_puppy.jpg?raw=true" /> */}
                         </td>
                         <td>
-                            <Image src={hand_tattoo_0} />
+                            <Image src={hand_tattoo_0} alt="tattoo of strawberries on hand" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/portfolio_pics/chicana240c.jpg?raw=true" /> */}
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <Image src={flowers_0} />
+                            <Image src={flowers_0} alt="tattoo of flowers"/>
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/flowers_0.jpg?raw=true" /> */}
                         </td>
 
                         <td>
-                            <Image src={face_tat} />
+                            <Image src={face_tat} alt="tattoo on a face" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/images/a_star_is_born.jpg?raw=true" /> */}
                         </td>
 
                         <td>
-                            <Image src={cowgirl_classic} />
+                            <Image src={cowgirl_classic} alt="tattoo of a cowgirl" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/home_photos/peacock_featherb9b9.jpg?raw=true" /> */}
                         </td>
@@ -100,47 +101,47 @@ const Tattoos = () => (
                     <tr>
 
                         <td>
-                            <Image src={chicana} />
+                            <Image src={chicana} alt="tattoo of the word chicana" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/rib_cage_fair_classic.jpg?raw=true" /> */}
                         </td>
                         <td>
-                            <Image src={bondage_woman} />
+                            <Image src={bondage_woman} alt="tattoo tattoo of a woman in bondage" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/gray_wash_bird_0.jpg?raw=true" /> */}
                         </td>
                         <td>
-                            <Image src={a_star_is_born} />
+                            <Image src={a_star_is_born} alt="tattoo of a realistic looking galaxy" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/trippy_af_0.jpg?raw=true" /> */}
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <Image src={hand_tattoo_0} />
+                            <Image src={dad} alt="tattoo of a bunch of name tags" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/images/meat_is_murder.jpg?raw=true" /> */}
                         </td>
 
                         <td>
-                            <Image src={peacock_feather} />
+                            <Image src={peacock_feather} alt="tattoo of a bright peakcock feather" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/images/sun_in_my_hand.jpg?raw=true" /> */}
                         </td>
                         <td>
-                            <Image src={trippy_af_0} />
+                            <Image src={trippy_af_0} alt="tattoo of a centipede opening up to reveal women's faces" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/tiger_classic_0_0.jpg?raw=true" /> */}
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <Image src={tiger_classic_0} />
+                            <Image src={tiger_classic_0} alt="tattoo of a tiger" />
 
                             {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/skull_0.jpg?raw=true" /> */}
                         </td>
                         <td>
-                            <Image src={skull_1} />
+                            <Image src={skull_1} alt="tattoo of skull" />
                         </td>
                     </tr>
                 </tbody>

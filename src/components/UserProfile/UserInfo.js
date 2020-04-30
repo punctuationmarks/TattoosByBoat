@@ -12,8 +12,8 @@ const UserInfo = () => (
             <br />
             <h3>{value.username}</h3>
             <br />
-            <Image src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/profile_pics/default.jpg?raw=true" alt="avatar" />
-          </div>
+            <Image src={value.profile_image} alt="profile image"/>
+           </div>
           <br />
           <p>
             View My:
