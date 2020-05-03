@@ -1,5 +1,5 @@
 import React, { Fragment, } from 'react';
-import Navbar from "./components/Navbar";
+import NavbarComponent from "./components/Navbar";
 import UserProfile from "./components/UserProfile";
 import { Switch, Route, } from "react-router-dom";
 import { Container } from 'react-bootstrap'
@@ -8,7 +8,7 @@ import "./static/App.css";
 const App = () => (
 
   <Fragment>
-    <Navbar />
+    <NavbarComponent />
     <Container>
       <Switch>
         <Route

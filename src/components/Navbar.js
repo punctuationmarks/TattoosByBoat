@@ -3,7 +3,7 @@ import { UserConsumer, } from "../providers/UserProvider";
 import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
 
 
-const NavbarMe = () => (
+const NavbarComponent = () => (
   <UserConsumer>
     {value => (
       <>
@@ -119,4 +119,4 @@ const NavbarMe = () => (
   </UserConsumer>
 )
 
-export default NavbarMe;
+export default NavbarComponent;
