@@ -8,6 +8,7 @@
     "react-bootstrap": "*",
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "*",
+    "react-lazy-load-image-component": "^1.4.3",
     "react-media": "^1.10.0",
     "react-router-dom": "*",
     "react-scripts": "*",

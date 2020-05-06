@@ -60,10 +60,18 @@ a {
   margin-left: 0;
 }
 
+.modal-button{
+  background-color: black;
+}
+
 .bioP {
   margin-bottom: 0;
 }
 
+.modal-image{
+  padding: 1em;
+  display: block;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
