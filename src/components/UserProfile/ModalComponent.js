@@ -12,6 +12,7 @@ function ModalComponent(props) {
             centered>
             <Modal.Body>
                 <LazyLoadImage effect="blur" src={props.image} className="modal-image" />
+                <Button variant="outline-dark" onClick={props.onHide}>X</Button>
             </Modal.Body>
         </Modal>
     );
