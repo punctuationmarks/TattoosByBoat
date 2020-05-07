@@ -19,11 +19,11 @@ const UserInfo = () => (
             View My:
             </p>
           <p>
-            <a href={value.instagram} target="_blank">
+            <a href={value.instagram} target="_blank" rel="noopener noreferrer">
               Insta</a> |
-           <a href={value.shop_website} target="_blank">
+           <a href={value.shop_website} target="_blank" rel="noopener noreferrer">
               Shop</a> |
-           <a href={value.shop_instagram} target="_blank">
+           <a href={value.shop_instagram} target="_blank" rel="noopener noreferrer">
               Shop's Insta</a>
           </p>
         </Col>

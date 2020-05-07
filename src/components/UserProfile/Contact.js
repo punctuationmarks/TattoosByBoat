@@ -1,8 +1,8 @@
 // Contact Component 
-import React, { useState } from "react";
+import React from "react";
 import { UserConsumer } from "../../providers/UserProvider";
 import { Table } from "react-bootstrap";
-import {CopyToClipboard} from "react-copy-to-clipboard"
+import { CopyToClipboard } from "react-copy-to-clipboard"
 
 
 const Contact = () => {
@@ -29,13 +29,13 @@ const Contact = () => {
                         <tbody style={{ fontSize: "12px" }}>
                             <tr>
                                 <td>
-                                    <a href="https://www.instagram.com/tattoosbyboat/" target="_blank">
+                                    <a href="https://www.instagram.com/tattoosbyboat/" target="_blank" rel="noopener noreferrer">
                                         <span role="img" aria-labelledby="message">📩</span> Message Me</a>
                                 </td>
 
                                 <td>
                                     <CopyToClipboard text={"https://tattoosbyboat.com"}>
-                                        <button role="img" aria-labelledby="forward">📤 Copy site link for a Friend</button>
+                                        <button role="img" aria-labelledby="forward"><span role="img" aria-labelledby="copy site url">📤</span> Copy site link for a Friend</button>
                                     </CopyToClipboard>
                                 </td>
                             </tr>
@@ -55,7 +55,7 @@ const Contact = () => {
                                         <span role="img" aria-labelledby="insta message">📲</span> Insta Message</a>
                                 </td>
                                 <td>
-                                    <a href="https://www.wikihow.com/Block-a-Website-in-All-Web-Browsers" target="_blank">
+                                    <a href="https://www.wikihow.com/Block-a-Website-in-All-Web-Browsers" target="_blank" rel="noopener noreferrer">
                                         <span role="img" aria-labelledby="no sign">🚫</span> Block User</a>
                                 </td>
                             </tr>

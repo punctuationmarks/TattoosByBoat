@@ -1,7 +1,7 @@
-
+// needs to be refactored
 // All of the cards for tattoos
 
-import React from "react";
+import React, { useState } from "react";
 import { UserConsumer } from '../../providers/UserProvider'
 import { Table, Image } from "react-bootstrap";
 import flash_0 from '../../static/images/flash_0.jpg'
@@ -21,138 +21,275 @@ import trippy_af_0 from '../../static/images/trippy_af_0.jpg'
 import peacock_feather from '../../static/images/peacock_feather.jpg'
 import face_tat from '../../static/images/face_tat.jpg'
 import dad from '../../static/images/dad.jpg'
+import ModalComponent from "./ModalComponent";
+
+import { Button } from 'react-bootstrap';
 
 
-const Tattoos = () => (
-    <UserConsumer>
-        {value => (
-            <Table variant="sm">
-                <thead className="yellowTable">
-                    <tr>
-                        <th>
-                            {value.username}'s Tattoos
+
+function Tattoos() {
+    // const [modalShow0, setModalShow0] = useState(false);
+    const [modalShow1, setModalShow1] = useState(false);
+    const [modalShow2, setModalShow2] = useState(false);
+    const [modalShow3, setModalShow3] = useState(false);
+    const [modalShow4, setModalShow4] = useState(false);
+    const [modalShow5, setModalShow5] = useState(false);
+    const [modalShow6, setModalShow6] = useState(false);
+    const [modalShow7, setModalShow7] = useState(false);
+    const [modalShow8, setModalShow8] = useState(false);
+    const [modalShow9, setModalShow9] = useState(false);
+    const [modalShow10, setModalShow10] = useState(false);
+    const [modalShow11, setModalShow11] = useState(false);
+    const [modalShow12, setModalShow12] = useState(false);
+    const [modalShow14, setModalShow14] = useState(false);
+    const [modalShow15, setModalShow15] = useState(false);
+    const [modalShow16, setModalShow16] = useState(false);
+    const [modalShow17, setModalShow17] = useState(false);
+    const [modalShow18, setModalShow18] = useState(false);
+
+    return (
+        <UserConsumer>
+            {value => (
+                <Table variant="sm">
+                    <thead className="yellowTable">
+                        <tr>
+                            <th>
+                                {value.username}'s Tattoos
                   </th>
-                        <th>
-                        </th>
-                        <th>
-                        </th>
-                        <th>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <Image src={flash_0} alt="flash tattoo on hand" />
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/flash_0.jpg?raw=true" /> */}
-                        </td>
-                        <td>
-                            <Image src={zodiac_killer} alt="tattoo of the zodiac killer"/>
+                            <th>
+                            </th>
+                            <th>
+                            </th>
+                            <th>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <Button variant="outline-dark" onClick={() => setModalShow1(true)}>
+                                    <Image src={flash_0} alt="flash tattoo on hand" fluid className="p-2 " />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow1}
+                                    image={flash_0}
+                                    onHide={() => setModalShow1(false)}
+                                />
+                            </td>
+                            <td>
 
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/cowgirl_classic.jpg?raw=true" /> */}
-                        </td>
-                        <td>
-                            <Image src={gray_wash_bird_0} alt="tattoo of detailed gray wash bird" />
+                                <Button variant="outline-dark" onClick={() => setModalShow2(true)}>
+                                    <Image src={zodiac_killer} alt="tattoo of the zodiac killer" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow2}
+                                    image={zodiac_killer}
+                                    onHide={() => setModalShow2(false)}
+                                />
+                            </td>
+                            <td>
 
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/images/zodiac_killer.jpg?raw=true" /> */}
-                        </td>
-
-
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <Image src={skull_0} alt="tattoo of skull"/>
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/images/bondage_woman.jpg?raw=true" /> */}
-                        </td>
-
-                        <td>
-                            <Image src={sun_in_my_hand} alt="tattoo of hand holding sun" />
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/sad_happy_puppy.jpg?raw=true" /> */}
-                        </td>
-                        <td>
-                            <Image src={hand_tattoo_0} alt="tattoo of strawberries on hand" />
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/portfolio_pics/chicana240c.jpg?raw=true" /> */}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <Image src={flowers_0} alt="tattoo of flowers"/>
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/flowers_0.jpg?raw=true" /> */}
-                        </td>
-
-                        <td>
-                            <Image src={face_tat} alt="tattoo on a face" />
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/images/a_star_is_born.jpg?raw=true" /> */}
-                        </td>
-
-                        <td>
-                            <Image src={cowgirl_classic} alt="tattoo of a cowgirl" />
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/home_photos/peacock_featherb9b9.jpg?raw=true" /> */}
-                        </td>
-
-                    </tr>
-                    <tr>
-
-                        <td>
-                            <Image src={chicana} alt="tattoo of the word chicana" />
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/rib_cage_fair_classic.jpg?raw=true" /> */}
-                        </td>
-                        <td>
-                            <Image src={bondage_woman} alt="tattoo tattoo of a woman in bondage" />
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/gray_wash_bird_0.jpg?raw=true" /> */}
-                        </td>
-                        <td>
-                            <Image src={a_star_is_born} alt="tattoo of a realistic looking galaxy" />
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/trippy_af_0.jpg?raw=true" /> */}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <Image src={dad} alt="tattoo of a bunch of name tags" />
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/images/meat_is_murder.jpg?raw=true" /> */}
-                        </td>
-
-                        <td>
-                            <Image src={peacock_feather} alt="tattoo of a bright peakcock feather" />
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/Older/images/sun_in_my_hand.jpg?raw=true" /> */}
-                        </td>
-                        <td>
-                            <Image src={trippy_af_0} alt="tattoo of a centipede opening up to reveal women's faces" />
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/tiger_classic_0_0.jpg?raw=true" /> */}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <Image src={tiger_classic_0} alt="tattoo of a tiger" />
-
-                            {/* <Image thumbnail="true" src="https://github.com/punctuationmarks/ImageStorage/blob/master/TattoosByBoat/skull_0.jpg?raw=true" /> */}
-                        </td>
-                        <td>
-                            <Image src={skull_1} alt="tattoo of skull" />
-                        </td>
-                    </tr>
-                </tbody>
-            </Table>
+                                <Button variant="outline-dark" onClick={() => setModalShow3(true)}>
+                                    <Image src={gray_wash_bird_0} alt="tattoo of detailed gray wash bird" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow3}
+                                    image={gray_wash_bird_0}
+                                    onHide={() => setModalShow3(false)}
+                                />
+                            </td>
 
 
+                        </tr>
+
+                        <tr>
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow4(true)}>
+                                    <Image src={skull_0} alt="tattoo of skull" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow4}
+                                    image={skull_0}
+                                    onHide={() => setModalShow4(false)}
+                                />
+                            </td>
+
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow5(true)}>
+                                    <Image src={sun_in_my_hand} alt="tattoo of hand holding sun" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow5}
+                                    image={sun_in_my_hand}
+                                    onHide={() => setModalShow5(false)}
+                                />
+
+                            </td>
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow6(true)}>
+                                    <Image src={hand_tattoo_0} alt="tattoo of strawberries on hand" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow6}
+                                    image={hand_tattoo_0}
+                                    onHide={() => setModalShow6(false)}
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow7(true)}>
+                                    <Image src={flowers_0} alt="tattoo of flowers" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow7}
+                                    image={flowers_0}
+                                    onHide={() => setModalShow7(false)}
+                                />
+
+                            </td>
+
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow8(true)}>
+                                    <Image src={face_tat} alt="tattoo on a face" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow8}
+                                    image={face_tat}
+                                    onHide={() => setModalShow8(false)}
+                                />
+                            </td>
+
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow9(true)}>
+                                    <Image src={cowgirl_classic} alt="tattoo of a cowgirl" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow9}
+                                    image={cowgirl_classic}
+                                    onHide={() => setModalShow9(false)}
+                                />
+                            </td>
+
+                        </tr>
+                        <tr>
+
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow10(true)}>
+                                    <Image src={chicana} alt="tattoo of the word chicana" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow10}
+                                    image={chicana}
+                                    onHide={() => setModalShow10(false)}
+                                />
+
+                            </td>
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow11(true)}>
+                                    <Image src={bondage_woman} alt="tattoo tattoo of a woman in bondage" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow11}
+                                    image={bondage_woman}
+                                    onHide={() => setModalShow11(false)}
+                                />
+
+                            </td>
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow12(true)}>
+                                    <Image src={a_star_is_born} alt="tattoo of a realistic looking galaxy" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow12}
+                                    image={a_star_is_born}
+                                    onHide={() => setModalShow12(false)}
+                                />
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow14(true)}>
+                                    <Image src={dad} alt="tattoo of a bunch of name tags" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow14}
+                                    image={dad}
+                                    onHide={() => setModalShow14(false)}
+                                />
+                            </td>
+
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow15(true)}>
+                                    <Image src={peacock_feather} alt="tattoo of a bright peakcock feather" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow15}
+                                    image={peacock_feather}
+                                    onHide={() => setModalShow15(false)}
+                                />
+                            </td>
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow16(true)}>
+                                    <Image src={trippy_af_0} alt="tattoo of a centipede opening up to reveal women's faces" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow16}
+                                    image={trippy_af_0}
+                                    onHide={() => setModalShow16(false)}
+                                />
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow17(true)}>
+                                    <Image src={tiger_classic_0} alt="tattoo of a tiger" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow17}
+                                    image={tiger_classic_0}
+                                    onHide={() => setModalShow17(false)}
+                                />
+
+                            </td>
+                            <td>
+
+                                <Button variant="outline-dark" onClick={() => setModalShow18(true)}>
+                                    <Image src={skull_1} alt="tattoo of skull" />
+                                </Button>
+                                <ModalComponent
+                                    show={modalShow18}
+                                    image={skull_1}
+                                    onHide={() => setModalShow18(false)}
+                                />
+                            </td>
+                        </tr>
+                    </tbody>
+                </Table>
 
 
 
-        )}
-    </UserConsumer>
-)
+
+
+            )}
+        </UserConsumer>
+    )
+}
 
 export default Tattoos;
+
