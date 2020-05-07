@@ -7,13 +7,14 @@ function ModalComponent(props) {
     return (
         <Modal
             {...props}
-            size="xl"
+            // size="xl"
+            size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
             animation={false}>
             <Modal.Body>
                 <LazyLoadImage effect="blur" src={props.image} className="modal-image" />
-                <Button className="primary" variant="outline-dark" onClick={props.onHide}>Close</Button>
+                {/* <Button className="primary" variant="outline-dark" onClick={props.onHide}>Close</Button> */}
             </Modal.Body>
         </Modal>
     );

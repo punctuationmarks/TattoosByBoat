@@ -21,6 +21,8 @@ import trippy_af_0 from '../../static/images/trippy_af_0.jpg'
 import peacock_feather from '../../static/images/peacock_feather.jpg'
 import face_tat from '../../static/images/face_tat.jpg'
 import dad from '../../static/images/dad.jpg'
+import woman_face_hearts from '../../static/images/woman_face_hearts.jpg'
+
 import ModalComponent from "./ModalComponent";
 
 import { Button } from 'react-bootstrap';
@@ -130,11 +132,11 @@ function Tattoos() {
                             <td>
 
                                 <Button variant="outline-dark" onClick={() => setModalShow6(true)}>
-                                    <Image src={hand_tattoo_0} alt="tattoo of strawberries on hand" />
+                                    <Image src={woman_face_hearts} alt="the smiths meat is murder" />
                                 </Button>
                                 <ModalComponent
                                     show={modalShow6}
-                                    image={hand_tattoo_0}
+                                    image={woman_face_hearts}
                                     onHide={() => setModalShow6(false)}
                                 />
                             </td>
