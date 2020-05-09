@@ -45,7 +45,8 @@ const NavbarComponent = () => (
             <Nav.Link
               className="headerLinks"
               target="_blank"
-              href="/"
+              href="https://duckduckgo.com/"
+              rel="noopener noreferrer"
             >
               Help | SignOut
         </Nav.Link>
@@ -66,6 +67,7 @@ const NavbarComponent = () => (
               className="headerLinks"
               href={value.friends_link}
               target="_blank"
+              rel="noopener noreferrer"
             >
               Friends |
           </Nav.Link>
@@ -73,6 +75,7 @@ const NavbarComponent = () => (
               className="headerLinks"
               href={value.music_link}
               target="_blank"
+              rel="noopener noreferrer"
             >
               Music |
           </Nav.Link>
@@ -81,6 +84,7 @@ const NavbarComponent = () => (
               className="headerLinks"
               href={value.game_link}
               target="_blank"
+              rel="noopener noreferrer"
             >
               Games |
           </Nav.Link>
@@ -88,6 +92,7 @@ const NavbarComponent = () => (
               className="headerLinks"
               href={value.events_link}
               target="_blank"
+              rel="noopener noreferrer"
             >
               Events
           </Nav.Link>
