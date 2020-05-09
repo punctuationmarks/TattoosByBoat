@@ -2,8 +2,10 @@
 // All of the cards for tattoos
 
 import React, { useState } from "react";
+import { Table, Image, Button } from "react-bootstrap";
 import { UserConsumer } from '../../providers/UserProvider'
-import { Table, Image } from "react-bootstrap";
+import ModalComponent from "./ModalComponent";
+
 import flash_0 from '../../static/images/flash_0.jpg'
 import a_star_is_born from '../../static/images/a_star_is_born.jpg'
 import bondage_woman from '../../static/images/bondage_woman.jpg'
@@ -23,9 +25,6 @@ import face_tat from '../../static/images/face_tat.jpg'
 import dad from '../../static/images/dad.jpg'
 import woman_face_hearts from '../../static/images/woman_face_hearts.jpg'
 
-import ModalComponent from "./ModalComponent";
-
-import { Button } from 'react-bootstrap';
 
 
 

@@ -1,16 +1,18 @@
 
 // All of the cards for tattoos
 
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { UserConsumer } from '../../providers/UserProvider'
 import { Table, Image } from "react-bootstrap";
+import ModalComponent from "./ModalComponent";
+import { Button } from 'react-bootstrap';
+
 import flash_0 from '../../static/images/flash_0.jpg'
 import a_star_is_born from '../../static/images/a_star_is_born.jpg'
 import bondage_woman from '../../static/images/bondage_woman.jpg'
 import chicana from '../../static/images/chicana.jpg'
 import cowgirl_classic from '../../static/images/cowgirl_classic.jpg'
 import gray_wash_bird_0 from '../../static/images/gray_wash_bird_0.jpg'
-import hand_tattoo_0 from '../../static/images/hand_tattoo_0.jpg'
 import flowers_0 from '../../static/images/flowers_0.jpg'
 import sun_in_my_hand from '../../static/images/sun_in_my_hand.jpg'
 import skull_0 from '../../static/images/skull_0.jpg'
@@ -21,9 +23,7 @@ import trippy_af_0 from '../../static/images/trippy_af_0.jpg'
 import peacock_feather from '../../static/images/peacock_feather.jpg'
 import face_tat from '../../static/images/face_tat.jpg'
 import dad from '../../static/images/dad.jpg'
-import ModalComponent from "./ModalComponent";
-
-import { Button, Container } from 'react-bootstrap';
+// import hand_tattoo_0 from '../../static/images/hand_tattoo_0.jpg'
 
 
 
