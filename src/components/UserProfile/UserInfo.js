@@ -28,7 +28,7 @@ const UserInfo = () => (
           </p>
         </Col>
 
-        <Col style={{ fontSize: "16px", paddingLeft: "1px" }}>
+        <Col className="bioDiv">
           <br />
           <br />
           <br />
@@ -40,12 +40,10 @@ const UserInfo = () => (
           <br />
           <br />
         </Col>
-
-        <Row>
+{/* issues with css currently, need to figure out best way to load for mobile, since the text falls out of the box
           <div className="extendedNetwork">
             {value.username} is in your extended network
-          </div>
-        </Row>
+          </div> */}
 
       </>
     )}
