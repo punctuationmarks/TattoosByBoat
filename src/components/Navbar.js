@@ -61,22 +61,7 @@ const NavbarComponent = () => (
             >
               Home |
           </Nav.Link>
-            <Nav.Link
-              className="headerLinks"
-              target="_blank"
-              href={value.mail_link}
-            >
-              Mail |
-          </Nav.Link>
 
-
-            <Nav.Link
-              className="headerLinks"
-              target="_blank"
-              href={value.profile_link}
-            >
-              Profile |
-          </Nav.Link>
             <Nav.Link
               className="headerLinks"
               href={value.friends_link}
@@ -110,7 +95,7 @@ const NavbarComponent = () => (
               href={value.events_link}
               target="_blank"
             >
-              Events 
+              Events
           </Nav.Link>
           </Nav>
         </Navbar>
