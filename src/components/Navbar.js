@@ -74,15 +74,9 @@ const NavbarComponent = () => (
               href={value.music_link}
               target="_blank"
             >
-              Music
+              Music |
           </Nav.Link>
-            <Nav.Link
-              className="headerLinks"
-              href={value.video_link}
-              target="_blank"
-            >
-              | Video |
-          </Nav.Link>
+
             <Nav.Link
               className="headerLinks"
               href={value.game_link}
