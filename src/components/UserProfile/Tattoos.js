@@ -28,7 +28,7 @@ import woman_face_hearts from '../../static/images/woman_face_hearts.jpg'
 
 
 
-function Tattoos() {
+const Tattoos = () => {
     // const [modalShow0, setModalShow0] = useState(false);
     const [modalShow1, setModalShow1] = useState(false);
     const [modalShow2, setModalShow2] = useState(false);
