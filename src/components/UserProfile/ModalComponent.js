@@ -11,7 +11,7 @@ function ModalComponent(props) {
             aria-labelledby="contained-modal-title-vcenter"
             centered>
             <Modal.Body>
-                <LazyLoadImage effect="blur" src={props.image} className="modal-image" />
+                <LazyLoadImage effect="blur" delayTime="1500" src={props.image} className="modal-image" />
                 <Button variant="outline-dark" onClick={props.onHide}>X</Button>
             </Modal.Body>
         </Modal>

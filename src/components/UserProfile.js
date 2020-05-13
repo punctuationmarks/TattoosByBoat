@@ -126,8 +126,10 @@ const UserProfile = () => {
 
                         <Col>
                           <Blurbs />
-                          <Tattoos />
                         </Col>
+                      </Row>
+                      <Row>
+                        <Tattoos />
                       </Row>
 
                     </Container>
