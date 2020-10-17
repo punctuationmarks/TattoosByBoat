@@ -1,5 +1,5 @@
 import React from "react";
-import profile_image from "../static/images/profile_pic_0.jpg"
+import profile_image from "../static/images/profile_pic_0.jpg";
 
 // Set Up The Initial Context
 const UserContext = React.createContext();
@@ -10,31 +10,31 @@ export const UserConsumer = UserContext.Consumer;
 class UserProvider extends React.Component {
   state = {
     username: "Boat",
-    email: "tattoosbyboat@email.com",
+    email: "tattoosbyboat@gmail.com",
     city: "Indianapolis",
     state: "IN",
     country: "United States",
-    bio: "Thoughtful artist, who tattoos, paints, draws, and makes music. \nIf you're interested in getting a tattoo or having some art commissioned, send me an email.",
-    status: "Lorem ipsum dolor",
-    here_for: "lorem ipsum dolor.",
-    body_type: "lorem ipsum dolor.",
-    ethnicity: "lorem ipsum dolor.",
-    zodiac: "lorem ipsum dolor, you know how I do",
-    general_info: "Dolor possimus maiores harum iusto, expedita distinctio ex nesciunt saepe fugiat aliquid perspiciatis dolores atque,  numquam esse delectus suscipit nulla nisi possimus eum, exercitationem fuga dolore. Odit rerum provident ex eveniet exercitationem alias consequatur excepturi. Sapiente ratione aliquid provident at corrupti.",
-    about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias a velit voluptas harum? Commodi dolores consequatur quaerat iste delectus.",
-    who_id_like_to_meet: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias a velit voluptas harum? Commodi dolores consequatur quaerat iste delectus.",
+    bio:
+      "Thoughtful artist, who tattoos, paints, draws, and makes music. \nIf you're interested in getting a tattoo or having some art commissioned, send me an email.",
+    status: "Tattooing",
+    here_for: "Community support",
+    favorite_snack: "elote",
+    general_info:
+      "If you're looking for a new tattoo artist who has their own style hit me up!",
+    about:
+      "I'm an independent tattoo and oil painting artist who also plays music. I aim to make an inclusive environment for all my patrons and for people in general.",
+    who_id_like_to_meet:
+      "People who are actively aiming to make the world a better place",
     profile_image: profile_image,
     // links for navbar
     home_link: "/",
     mail_link: "https://protonmail.com/",
     profile_link: "/",
+    flash_art_link: "https://www.instagram.com/boatsdesigns/",
     friends_link: "https://github.com/punctuationmarks",
     music_link: "https://www.youtube.com/watch?v=2MHhLDCJ57E",
-    video_link: "/",
-    game_link: "https://selflessheroes.fr/",
-    events_link: "https://www.youtube.com/watch?v=XvB9ftAHpwc",
+    events_link: "https://mythicalwizardtattoo.com/",
     more_link: "/",
-
     // links on bio
     instagram: "https://www.instagram.com/tattoosbyboat/",
     shop_website: "https://mythicalwizardtattoo.com/",
@@ -44,15 +44,15 @@ class UserProvider extends React.Component {
   };
 
   updateUser = (user) => {
-    this.setState({ ...user, });
-  }
+    this.setState({ ...user });
+  };
 
   render() {
     return (
       <UserContext.Provider value={this.state}>
         {this.props.children}
       </UserContext.Provider>
-    )
+    );
   }
 }
 

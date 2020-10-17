@@ -1,45 +1,40 @@
 import React from "react";
-import { UserConsumer, } from "../providers/UserProvider";
-import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
-
+import { UserConsumer } from "../providers/UserProvider";
+import { Navbar, Nav, Form, Button, FormControl } from "react-bootstrap";
 
 const NavbarComponent = () => (
   <UserConsumer>
-    {value => (
+    {(value) => (
       <>
         <Navbar className="navbar" bg="primary" variant="dark">
           <Nav className="mr-auto">
             <Nav.Link
               style={{
                 color: "white",
-                fontSize: "2.25em"
+                fontSize: "2.25em",
               }}
-              href="/">
+              href="/"
+            >
               {value.username}
             </Nav.Link>
-
           </Nav>
 
-
-
           <Nav>
-
-            {/* fix this! */}
-            <Form inline
+            <Form
+              inline
               action="https://duckduckgo.com/"
               method="get"
-              className="navSearchBar">
+              className="navSearchBar"
+            >
               <FormControl
                 name="q"
                 type="text"
                 placeholder="Search"
-                className="mr-sm-2" />
-              <Button
-                type="submit"
-                variant="light">
+                className="mr-sm-2"
+              />
+              <Button type="submit" variant="light">
                 Search
               </Button>
-
             </Form>
 
             <Nav.Link
@@ -49,19 +44,14 @@ const NavbarComponent = () => (
               rel="noopener noreferrer"
             >
               Help | SignOut
-        </Nav.Link>
+            </Nav.Link>
           </Nav>
         </Navbar>
-        <Navbar className="secondaryNavbar"
-          variant="dark"
-        >
+        <Navbar className="secondaryNavbar" variant="dark">
           <Nav className="mr-auto">
-            <Nav.Link
-              className="headerLinks"
-              href={value.home_link}
-            >
+            <Nav.Link className="headerLinks" href={value.home_link}>
               Home |
-          </Nav.Link>
+            </Nav.Link>
 
             <Nav.Link
               className="headerLinks"
@@ -70,7 +60,7 @@ const NavbarComponent = () => (
               rel="noopener noreferrer"
             >
               Friends |
-          </Nav.Link>
+            </Nav.Link>
             <Nav.Link
               className="headerLinks"
               href={value.music_link}
@@ -78,16 +68,8 @@ const NavbarComponent = () => (
               rel="noopener noreferrer"
             >
               Music |
-          </Nav.Link>
+            </Nav.Link>
 
-            <Nav.Link
-              className="headerLinks"
-              href={value.game_link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Games |
-          </Nav.Link>
             <Nav.Link
               className="headerLinks"
               href={value.events_link}
@@ -95,12 +77,12 @@ const NavbarComponent = () => (
               rel="noopener noreferrer"
             >
               Events
-          </Nav.Link>
+            </Nav.Link>
           </Nav>
         </Navbar>
       </>
     )}
   </UserConsumer>
-)
+);
 
 export default NavbarComponent;

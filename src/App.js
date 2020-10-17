@@ -11,6 +11,7 @@ const App = () => (
     <NavbarComponent />
     <Container>
       <Switch>
+        {/* this is only here because app was originally larger, needs to be refactored */}
         <Route
           exact
           path="/"
