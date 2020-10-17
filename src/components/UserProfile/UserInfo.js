@@ -56,13 +56,6 @@ const UserInfo = () => (
             <br />
           </Col>
         </Row>
-        {/* <Row>
-
-          <div className="extendedNetwork">
-            {value.username} is in your extended network
-          </div>
-
-        </Row> */}
       </>
     )}
   </UserConsumer>

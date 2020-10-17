@@ -15,7 +15,8 @@ body {
   font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
 }
 
-p, td {
+p,
+td {
   font-size: 1em;
 }
 
@@ -64,7 +65,6 @@ a {
   margin-bottom: 0;
 }
 
-
 .modal-image {
   padding: 1em;
   display: block;
@@ -80,7 +80,6 @@ a {
   height: 2em;
   color: var(--white);
 }
-
 
 .contactTable {
   border: 1px solid var(--black);
