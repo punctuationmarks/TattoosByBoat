@@ -1,5 +1,5 @@
 {
-  "name": "TattoosByBoat",
+  "name": "tattoos-by-boat",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,6 @@
     "react-dom": "*",
     "react-lazy-load-image-component": "^1.4.3",
     "react-media": "^1.10.0",
-    "react-router-dom": "*",
     "react-scripts": "*"
   },
   "scripts": {

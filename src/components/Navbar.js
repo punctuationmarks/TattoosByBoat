@@ -11,11 +11,11 @@ const NavbarComponent = () => (
             <Nav.Link
               style={{
                 color: "white",
-                fontSize: "2.25em",
+                fontSize: "1.75em",
               }}
               href="/"
             >
-              {value.username}
+              by {value.username}
             </Nav.Link>
           </Nav>
 
@@ -43,7 +43,7 @@ const NavbarComponent = () => (
               href="https://duckduckgo.com/"
               rel="noopener noreferrer"
             >
-              Help | SignOut
+              SignOut
             </Nav.Link>
           </Nav>
         </Navbar>

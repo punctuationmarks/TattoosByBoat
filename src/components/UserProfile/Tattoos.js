@@ -1,19 +1,15 @@
 // needs to be refactored
-// All of the cards for tattoos
-
 import React, { useState } from "react";
 import { Table, Image, Button } from "react-bootstrap";
 import { UserConsumer } from "../../providers/UserProvider";
 import ModalComponent from "./ModalComponent";
 
-// need to refactor this
 import flash_0 from "../../static/images/flash_0.jpg";
 import a_star_is_born from "../../static/images/a_star_is_born.jpg";
 import bondage_woman from "../../static/images/bondage_woman.jpg";
 import chicana from "../../static/images/chicana.jpg";
 import cowgirl_classic from "../../static/images/cowgirl_classic.jpg";
 import gray_wash_bird_0 from "../../static/images/gray_wash_bird_0.jpg";
-// import hand_tattoo_0 from '../../static/images/hand_tattoo_0.jpg'
 import flowers_0 from "../../static/images/flowers_0.jpg";
 import sun_in_my_hand from "../../static/images/sun_in_my_hand.jpg";
 import skull_0 from "../../static/images/skull_0.jpg";
@@ -27,7 +23,6 @@ import dad from "../../static/images/dad.jpg";
 import woman_face_hearts from "../../static/images/woman_face_hearts.jpg";
 
 const Tattoos = () => {
-  // const [modalShow0, setModalShow0] = useState(false);
   const [modalShow1, setModalShow1] = useState(false);
   const [modalShow2, setModalShow2] = useState(false);
   const [modalShow3, setModalShow3] = useState(false);

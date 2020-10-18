@@ -1,6 +1,8 @@
 import React from "react";
 import profile_image from "../static/images/profile_pic_0.jpg";
 
+// This is a terrible way of handling context, don't do it this way again
+
 // Set Up The Initial Context
 const UserContext = React.createContext();
 // Create an exportable consumer that can be injected into components
@@ -9,6 +11,8 @@ export const UserConsumer = UserContext.Consumer;
 // Create the provider using a traditional React.Component class
 class UserProvider extends React.Component {
   state = {
+    // **
+    // General "about" info
     username: "Boat",
     email: "tattoosbyboat@gmail.com",
     city: "Indianapolis",
@@ -26,16 +30,20 @@ class UserProvider extends React.Component {
     who_id_like_to_meet:
       "People who are actively aiming to make the world a better place",
     profile_image: profile_image,
-    // links for navbar
+
+    // **
+    // Links for navbar
     home_link: "/",
     mail_link: "https://protonmail.com/",
     profile_link: "/",
     flash_art_link: "https://www.instagram.com/boatsdesigns/",
     friends_link: "https://github.com/punctuationmarks",
-    music_link: "https://www.youtube.com/watch?v=2MHhLDCJ57E",
-    events_link: "https://mythicalwizardtattoo.com/",
+    music_link: "https://www.youtube.com/watch?v=2MHhLDCJ57E", // deathgrips
+    events_link: "https://mythicalwizardtattoo.com/", // current shop
     more_link: "/",
-    // links on bio
+
+    // **
+    // Links on bio
     instagram: "https://www.instagram.com/tattoosbyboat/",
     shop_website: "https://mythicalwizardtattoo.com/",
     shop_instagram: "https://www.instagram.com/mythicalwizardtattoo/",
