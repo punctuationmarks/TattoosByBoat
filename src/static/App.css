@@ -9,91 +9,14 @@
   --black: rgba(0, 0, 0, 0.884);
 }
 
-body {
-  font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
-}
-
-p,
-td {
-  font-size: 1em;
-}
-
 a {
+  color: var(--darker-blue);
+  font-family: inherit;
   padding: 0.25em;
 }
 
-.small-container {
-  margin: 0 1.7rem;
-}
-
-.tablePromps {
-  padding: 1em;
-  background-color: var(--light-medium-blue);
-  color: var(--darker-blue);
-}
-
-.tableValues {
-  padding: 0.75em;
-  background-color: var(--light-blue);
-}
-
-.infoPrompt {
-  color: var(--dark-orange);
-}
-
-.yellowTable {
-  background-color: var(--yellow);
-  color: var(--b);
-}
-
-.secondaryNavbar {
-  position: relative;
-  background-color: var(--medium-blue);
-  height: 2em;
-  font-size: 1em;
-}
-
-.navSearchBar {
-  color: var(--white);
-}
-
-.bioDiv {
-  width: 30%;
-  margin-left: 0;
-}
-
-.bioP {
-  margin-bottom: 0;
-}
-
-.modal-image {
-  padding: 1em;
-  display: block;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.headerLinks {
-  position: relative;
-  height: 2em;
-  color: var(--white);
-}
-
-.contactTable {
-  border: 1px solid var(--black);
-}
-
-.contactTableHeader {
-  background-color: var(--medium-blue);
-  color: var(--white);
-}
-
-a {
-  font-family: inherit;
-  color: var(--darker-blue);
+body {
+  font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
 }
 
 button {
@@ -110,10 +33,85 @@ img {
   height: auto;
 }
 
-/* Bootstrap overrides */
-.form-control {
-  flex-flow: nowrap;
+p,
+td {
+  font-size: 1em;
+}
+
+.bioDiv {
+  margin-left: 0;
+  width: 30%;
+}
+
+.bioP {
+  margin-bottom: 0;
+}
+
+.contactTable {
+  border: 1px solid var(--black);
+}
+
+.contactTableHeader {
+  background-color: var(--medium-blue);
+  color: var(--white);
+}
+
+.headerLinks {
+  color: var(--white);
+  height: 2em;
+  position: relative;
+}
+
+.infoPrompt {
+  color: var(--dark-orange);
+}
+
+.modal-image {
+  display: block;
+  padding: 1em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navSearchBar {
+  color: var(--white);
+}
+
+.secondaryNavbar {
+  background-color: var(--medium-blue);
+  font-size: 1em;
+  height: 2em;
+  position: relative;
+}
+
+.small-container {
+  margin: 0 1.7rem;
+}
+
+.small-form {
+  /* Overriding bootstrap defauls here */
+  flex-flow: nowrap !important;
   margin: 0 0.5rem;
+  max-width: 8rem !important;
   padding: 0.25rem 0.5rem !important;
   width: auto !important;
+}
+
+.tablePromps {
+  background-color: var(--light-medium-blue);
+  color: var(--darker-blue);
+  padding: 1em;
+}
+
+.tableValues {
+  background-color: var(--light-blue);
+  padding: 0.75em;
+}
+
+.yellowTable {
+  background-color: var(--yellow);
+  color: var(--b);
 }

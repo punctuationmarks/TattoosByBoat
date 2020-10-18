@@ -1,6 +1,7 @@
 import React from "react";
 import { UserConsumer } from "../providers/UserProvider";
 import { Navbar, Nav, Form, Button, FormControl } from "react-bootstrap";
+import Media from "react-media";
 
 const NavbarComponent = () => (
   <UserConsumer>
@@ -26,15 +27,47 @@ const NavbarComponent = () => (
               method="get"
               className="navSearchBar"
             >
-              <FormControl
-                name="q"
-                type="text"
-                placeholder="Search"
-                className="mr-sm-2"
-              />
-              <Button type="submit" variant="light">
-                Search
-              </Button>
+              <Media
+                queries={{
+                  cellphone: "(min-width: 450px) and (max-width: 599px)",
+                  desktop: "(min-width: 600px)",
+                }}
+              >
+                {(matches) => (
+                  <>
+                    {matches.cellphone && (
+                      <>
+                        <FormControl
+                          name="q"
+                          type="text"
+                          placeholder="Search"
+                          className="small-form"
+                        />
+                        <Button
+                          type="submit"
+                          variant="light"
+                          className="btn-sm"
+                        >
+                          Search
+                        </Button>
+                      </>
+                    )}
+                    {matches.desktop && (
+                      <>
+                        <FormControl
+                          name="q"
+                          type="text"
+                          placeholder="Search"
+                          className="mr-sm-2"
+                        />
+                        <Button type="submit" variant="light">
+                          Search
+                        </Button>
+                      </>
+                    )}
+                  </>
+                )}
+              </Media>
             </Form>
 
             <Nav.Link
